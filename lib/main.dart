@@ -5,6 +5,13 @@ import "package:flutter_stripe_demo/screen/home_screen.dart";
 import "package:flutter_stripe_demo/singletons/dio_singleton.dart";
 import "package:keyboard_dismisser/keyboard_dismisser.dart";
 
+/*
+Account credential:
+Website: dashboard.stripe.com
+Username: dbuddh921@rku.ac.in
+Password: A****i*********3
+*/
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   Stripe.publishableKey = StringConstants().publishableKey;
