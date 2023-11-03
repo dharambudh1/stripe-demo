@@ -6,9 +6,9 @@ class BooksModel {
   BooksModel.fromJson(Map<String, dynamic> json) {
     if (json["data"] != null) {
       data = <Data>[];
-      json["data"].forEach((dynamic v) {
+      for (final dynamic v in json["data"] as List<dynamic>) {
         data?.add(Data.fromJson(v));
-      });
+      }
     }
   }
 
